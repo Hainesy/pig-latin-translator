@@ -1,0 +1,6 @@
+<div *ngIf="!isPlaying(); else playing">
+  <img src="../../assets/pig-side-view-stopped.png" class="pig-img img-fluid" (click)="startSpeech()">
+</div>
+<ng-template #playing>
+  <img src="../../assets/pig-side-view-playing.png" class="pig-img img-fluid" (click)="stopSpeech()">
+</ng-template>
